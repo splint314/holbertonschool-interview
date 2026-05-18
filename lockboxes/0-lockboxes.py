@@ -1,14 +1,20 @@
 #!/usr/bin/python3
 
+"""Determines if all the boxes can be opened."""
+
+
 def canUnlockAll(boxes):
 
-    if not boxes:
-        return False
+    list = [0]
+    for i in list:
+        for j in boxes[i]:
+            if j not in list and j < len(boxes):
+                list.append(j)
+    return len(list) == len(boxes)
 
-    unlocked = [0]
-    for box_id in unlocked:
-        for key in boxes[box_id]:
-            if key not in unlocked and key < len(boxes):
-                unlocked.append(key)
 
-    return len(unlocked) == len(boxes)
+if __name__ == "__main__":
+    boxes = [[1], [2], [3], []]
+    print(canUnlockAll(boxes))
+    boxes = [[1, 3], [3, 0, 1], [2], [0]]
+    print(canUnlockAll(boxes))
