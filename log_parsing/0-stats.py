@@ -1,4 +1,5 @@
-#!/usr/bin/envpython3
+#!/usr/bin/python3
+
 """Log parsing script.
 
 Reads stdin line by line, computes total file size and counts valid status
