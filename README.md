@@ -26,14 +26,7 @@ This repository is a collection of standalone Python solutions to classic whiteb
 
 ## 🧠 Cheat Sheet
 
-- **Reachability (lockboxes)** — starting from one open box, keep collecting keys and opening whatever they unlock, tracking what's been reached. Like an escape room: you start with one key, open a drawer, find another key inside, and keep going until nothing new opens.
-- **Streaming aggregation (log_parsing)** — process input line by line, keeping running totals in memory instead of loading everything at once. Like a cashier keeping a running total on the register tape as items are scanned, printing a receipt every so often rather than waiting until the store closes.
-- **Prime factorization (minimum_operations)** — the fewest copy/paste steps to reach `n` equals the sum of `n`'s prime factors. Like buying eggs: to get 12 eggs cheaply you buy a box of 12 (or 2×6, or 3×4) rather than 12 single eggs — breaking the target into its "cheapest" repeated building blocks.
-- **Pascal's triangle recurrence** — each entry is the sum of the two entries directly above it, with the triangle edges always equal to 1. Like a pinball dropping through a triangular pegboard (a Galton board): the count at each peg is the sum of the paths that could arrive from the two pegs above it.
-- **Sieve of Eratosthenes (primegame)** — cross out multiples of each prime to quickly find all primes up to `n`. Like circling a number on a hundred-chart, then crossing out every multiple of it — whatever survives uncrossed is prime.
-- **Prefix counts + parity (primegame)** — precompute how many primes exist up to each number, then use whether that count is odd or even to decide the winner without replaying the game. Like knowing in advance who gets the last slice of pizza just by counting how many slices there are — odd means the first person to cut also gets the last piece.
-- **In-place transpose + reverse (rotate_2d_matrix)** — a 90° rotation is achieved by flipping the matrix across its diagonal, then reversing each row, with no extra matrix allocated. Like folding a physical map along its diagonal crease and then flipping each strip end-to-end to get the rotated view, all on the same sheet of paper.
-- **Bitmasking (utf8_validation)** — inspect the leading bits of each byte to know how many continuation bytes should follow, then check each continuation byte starts with `10`. Like reading airport signage: the first sign tells you how many more directional signs to expect, and each of those must match the expected format or your route is invalid.
+All the key concepts from this repo, explained with analogies → **[CHEATSHEET.md](CHEATSHEET.md)**
 
 ## 📬 Contact
 
